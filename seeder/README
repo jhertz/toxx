@@ -21,5 +21,5 @@ This program expects two files in the same directory as it runs out of:
     
 Yup thats it, a plain text file with two seperate lines! Make sure there's a line break between the two!!!
     
--bracket.txt: This file will contain the names of the bracket.
-    This is the name that shows up in the challonge URL
+-bracket.txt: This file will contain the name of the bracket.
+    This is the name that shows up in the challonge URL (if your bracket was http://challonge.com/fox then this file should just have one line, which says fox)

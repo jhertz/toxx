@@ -23,3 +23,8 @@ Yup thats it, a plain text file with two seperate lines! Make sure there's a lin
     
 -bracket.txt: This file will contain the name of the bracket.
     This is the name that shows up in the challonge URL (if your bracket was http://challonge.com/fox then this file should just have one line, which says fox)
+
+
+Caveats:
+-Right now, you’ll have to change the region to a different region if you want to use this outside of NYC. Just edit the python script and change the string.
+-Any players who aren’t found in GARPR will be seeded at the bottom. So make sure to adjust that if needed!

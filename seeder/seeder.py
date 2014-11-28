@@ -41,6 +41,8 @@ def lookup_garpr_rating(player):
 	r = requests.get("http://api.garpr.com/" + region + "/players?alias=" + player)
 	#print "recv'd:", r.text
 	info = r.json()
+	if not info["players"]:
+		return -9999
 	gar_id = info["players"][0]["id"]
 	print "GARPR ID:", gar_id
 	uri = "http://api.garpr.com/" + region + "/players/" + gar_id

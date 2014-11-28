@@ -21,18 +21,18 @@ def seed_participants( participants):
 	names = [ x['name'] for x in participants]
 	for n in names:
 		ratings[n] = lookup_garpr_rating(n)
-		print "rating for", n, " is:", ratings[n]
+		#print "rating for", n, " is:", ratings[n]
 	participants.sort(key= lambda p : ratings[p['name']])
 	participants.reverse()
-	print "testing sorting"
-	for p in participants:
-		print "ordered:", p['name']
+	#print "testing sorting"
+	#for p in participants:
+	#	print "ordered:", p['name']
 
 
 
 def update_seeding(participants):
 	for i, p in enumerate(participants):
-		print "seeded", p['id'], "AKA", p['name'], "as seed#", i+1
+		#print "seeded", p['id'], "AKA", p['name'], "as seed#", i+1
 		challonge.participants.update(tourney_id, p['id'], seed=i+1)
 
 
@@ -44,14 +44,14 @@ def lookup_garpr_rating(player):
 	if not info["players"]:
 		return -9999
 	gar_id = info["players"][0]["id"]
-	print "GARPR ID:", gar_id
+	#print "GARPR ID:", gar_id
 	uri = "http://api.garpr.com/" + region + "/players/" + gar_id
-	print "uri:", uri
+	#print "uri:", uri
 	r = requests.get(uri)
-	print "recv'd:", r.text
+	#print "recv'd:", r.text
 	info = r.json()
 	rating =  float(info["ratings"][region]["mu"])
-	print "rating:", rating
+	#print "rating:", rating
 	return rating
 	#return float(info["ratings"][region]["mu"])
 	#return 0

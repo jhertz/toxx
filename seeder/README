@@ -1,0 +1,25 @@
+seeder.py
+=================
+- by jhertz (aka HectoHertz)
+Super simple script to seed a bracket based on GARPR
+
+Setting up:
+- pychallonge
+- requests
+- python 2.7.X
+
+How To Use:
+
+This program expects two files in the same directory as it runs out of:
+
+
+-creds.txt: This file will contain your username and api_key to your challonge account.
+    It should be in the following format:
+    
+    username
+    api-key
+    
+Yup thats it, a plain text file with two seperate lines! Make sure there's a line break between the two!!!
+    
+-bracket.txt: This file will contain the names of the bracket.
+    This is the name that shows up in the challonge URL

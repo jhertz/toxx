@@ -28,11 +28,11 @@ most of the codes are self explanatory. however...
 #### credits:
 i didn't write any of the codes in this. i just put them together / bothered achilles when things didn't work. see the GALE01.TXT file for full attributions, but thanks to:
 
--Magus
--Datel
--InternetExplorer
--Achilles
--Sham Rock
--Jorgasms
+- Magus
+- Datel
+- InternetExplorer
+- Achilles
+- Sham Rock
+- Jorgasms
 
 

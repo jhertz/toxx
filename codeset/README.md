@@ -4,7 +4,7 @@
 
 
 ##### codes included:
-- Default Tournament Settings (4 stock, 8min, team attack on)
+- Default Tournament Settings (4 stock, 8min, team attack on, random stages set to the standard 6)
 - Unlock All Characters and Stages
 - Boot to Character Select Screen
 - Stage Striking
